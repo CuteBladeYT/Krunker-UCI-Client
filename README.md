@@ -46,7 +46,7 @@ npm install -g --save-dev electron-packager // GLOABL INSTALL, NOT RECCOMENDED
 5. Run `npx electron-packager 'app_directory' 'UCI Krunker' --overwrite --platform=win32 --arch=x64 --prune=true --out=build`. **IMPORTANT TO REPLACE `app_directory` WITH OUTPUT FROM POINT 4.**
 6. Go to `build` folder
 7. Open the only folder inside
-8. Open `UCI Krunker` file
+8. Open `UCI Krunker.exe` file
 9. Done!
 
 #### MacOS
