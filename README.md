@@ -1,45 +1,53 @@
-# electron-quick-start
+# Krunker UCI Client
+## Just a Krunker Client
 
-**Clone and run for a quick way to see Electron in action.**
+### Q: Why?
+**A:** Since it's the first version there are only a few options, but I'm planning to add much more! In plans there are Custom Scripts and Custom CSS loaders. You can see the **progress** [here](https://github.com/CuteBladeYT/Krunker-UCI-Client/projects/2).
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+### How to Install
+**Make sure you have installed**
+- [Node](https://nodejs.org/en/download/) v10.19.0
+- [npm](https://www.npmjs.com/) v6.14.4
+- [Git](https://git-scm.com/downloads) 2.25.1
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+<br>
 
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
+1. Open Terminal / CMD
+2. Run 
+```
 git clone https://github.com/electron/electron-quick-start
-# Go into the repository
 cd electron-quick-start
-# Install dependencies
 npm install
-# Run the app
 npm start
 ```
+3. Install **Electron Packager**
+```
+npm install --save-dev electron-packager // LOCAL INSTALL
+npm install -g --save-dev electron-packager // GLOABL INSTALL, NOT RECCOMENDED
+```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+#### Linux
+1. Open Terminal
+2. Run `git clone https://github.com/CuteBladeYT/Krunker-UCI-Client`
+3. Copy all the files to *Electron Quick Start* directory
+4. Press F4 if you're using Dolphin. If not, open Terminal
+5. Type `echo $PWD` and copy the output
+6. Run `npx electron-packager 'app_directory' 'UCI Krunker' --overwrite --platform=linux --arch=x64 --prune=true --out=build`. **IMPORTANT TO REPLACE `app_directory` WITH OUTPUT FROM POINT 5.**
+7. Go to `build` folder
+8. Open the only folder inside
+9. Open `UCI Krunker` file
+10. Done!
 
-## Resources for Learning Electron
+#### Windows
+1. Open CMD
+2. Run `git clone https://github.com/CuteBladeYT/Krunker-UCI-Client`
+3. Copy all the files to *Electron Quick Start* directory
+4. In CMD type `echo %cd%` and copy the output
+5. Run `npx electron-packager 'app_directory' 'UCI Krunker' --overwrite --platform=win32 --arch=x64 --prune=true --out=build`. **IMPORTANT TO REPLACE `app_directory` WITH OUTPUT FROM POINT 4.**
+6. Go to `build` folder
+7. Open the only folder inside
+8. Open `UCI Krunker` file
+9. Done!
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+#### MacOS
+**Soon™**
