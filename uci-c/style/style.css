@@ -1,0 +1,185 @@
+@font-face {
+    font-family: heebo;
+    src: url(./fonts/heebo.ttf);
+}
+
+body {
+    background-color: var(--uci_background);
+    overflow: hidden;
+    transition: 200ms ease;
+}
+    a {
+        text-decoration: inherit;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    input[type=range] {
+        -webkit-appearance: none;
+      }
+      
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+      
+      input[type=range]:focus {
+        outline: none;
+      }
+      
+      input[type=range]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+      
+        background: transparent; 
+        border-color: transparent;
+        color: transparent;
+      }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+:root {
+    --uci_background: rgb(40, 40, 40);
+    --uci_settingsBackground: rgb(50, 50, 50);
+
+    --uci_textColor: white;
+
+    --uci_inputTextColor: white;
+    --uci_inputBackground: rgb(27, 27, 27);
+    --uci_inputBorderColor: white;
+}
+
+#gameCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+.client__settingsButton {
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+    width: 4vw;
+    height: 4vw;
+    z-index: 99999;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 200ms ease;
+    user-select: none;
+}
+    .client__settingsButton:hover {
+        opacity: 1;
+    }
+    .client__settingsButton_icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4vw;
+        height: 4vw;
+        z-index: inherit;
+    }
+
+settingsTab {
+    user-select: none;
+    position: fixed;
+    top: calc(1vw + 4vw + 1vw);
+    left: -35vw;
+    width: 30vw;
+    height: calc(100vh - (1vw + 4vw + 1vw));
+    background: var(--uci_settingsBackground);
+    border-right: 0.2vw white solid;
+    border-top: 0.2vw white solid;
+    border-top-right-radius: 1vw;
+    z-index: 9999;
+    transition: 500ms ease;
+    opacity: 0.5;
+}
+    settingsTab:hover {
+        opacity: 1;
+    }
+    .client__setting_header {
+        position: relative;
+        margin-left: 1vw;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+        color: white;
+        font-size: 1.5vw;
+        font-family: heebo;
+    }
+    .client__setting_input {
+        -webkit-appearance: none;
+        position: relative;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        color: var(--uci_inputTextColor);
+        font-size: 1.5vw;
+        font-family: heebo;
+        background: var(--uci_inputBackground);
+        border: 0.1vw var(--uci_inputBorderColor) solid;
+        text-align: center;
+        width: calc(100% - (1vw * 3));
+    }
+    .client__setting_input::-ms-track {
+        background: var(--uci_inputBackground);
+        border: 0.1vw var(--uci_inputBorderColor) solid;
+    }
+    .client__setting_input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background: var(--uci_inputBackground);
+        border: 0.1vw var(--uci_inputBorderColor) solid;
+        width: 1vw;
+        height: 2vw;
+    }
+    input[type=color].client__setting_input {
+        width: 3vw;
+        height: 3vw;
+    }
+    input[type=file].client__setting_input::-webkit-file-upload-button {
+        background: var(--uci_inputTextColor);
+        color: var(--uci_inputBackground);
+        border: none;
+    }
+    .client__settings_button {
+        position: relative;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        color: var(--uci_inputTextColor);
+        font-size: 1.5vw;
+        font-family: heebo;
+        background: var(--uci_inputBackground);
+        border: 0.1vw var(--uci_inputBorderColor) solid;
+        text-align: center;
+        width: calc(100% - (1vw * 3));
+        cursor: pointer;
+    }
+    .client__setting_name {
+        position: relative;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: -0.3vw;
+        color: white;
+        font-size: 1vw;
+        font-family: heebo;
+    }
+    .client__setting_textarea {
+        position: relative;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        color: grey;
+        font-size: 1vw;
+        font-family: monospace;
+        background: var(--uci_inputBackground);
+        border: 0.1vw var(--uci_inputBorderColor) solid;
+        text-align: left;
+        width: calc(100% - (1vw * 3));
+        height: 15vw;
+    }
