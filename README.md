@@ -1,8 +1,9 @@
 # Krunker UCI Client
 ## Just a Krunker Client
 
-### Q: Why?
-**A:** Since it's the first version there are only a few options, but I'm planning to add much more! In plans there are Custom Scripts and Custom CSS loaders. You can see the **progress** [here](https://github.com/CuteBladeYT/Krunker-UCI-Client/projects/2).
+### Features
+- Custom CSS loader - Load custom css by pasting source in `main_custom.css` file in the same folder as client
+- Scripts Loader - Scripts are stored in `scripts` folder in client dir
 
 ### How to Install
 **Make sure you have installed**
