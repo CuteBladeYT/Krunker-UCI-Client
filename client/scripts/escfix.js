@@ -5,9 +5,9 @@
 	desc: 		Tries to "fix" ESC key not working
 */
 
-document.addEventListener("keypress", (event) => {
+document.addEventListener("keydown", (event) => {
 	let pk = event.key;
-	if (pk == "ESC") {
+	if (pk == "Escape") {
 		showWindow(3);
 	};
 }, false) 
