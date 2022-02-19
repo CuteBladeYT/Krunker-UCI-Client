@@ -22,7 +22,7 @@ npm install -g --save-dev electron-packager // GLOABL INSTALL, NOT RECCOMENDED
 1. Open Terminal and run this
 ```
 git clone https://github.com/CuteBladeYT/Krunker-UCI-Client
-cd Krunker-UCI-Client
+cd Krunker-UCI-Client/client
 npm i && npm install fs
 echo "Current working directory is" && echo $PWD && echo "Copy it for later!"
 ```
