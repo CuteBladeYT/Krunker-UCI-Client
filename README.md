@@ -6,6 +6,7 @@
 - Scripts Loader - Scripts are stored in `scripts` folder in client dir
 
 ### How to Install
+**NOTE:** <> is like comment, delete it while pasting into terminal/cmd
 **Make sure you have installed**
 - [Node](https://nodejs.org/en/download/) v10.19.0
 - [npm](https://www.npmjs.com/) v6.14.4
