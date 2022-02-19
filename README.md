@@ -2,7 +2,7 @@
 ## Just a Krunker Client
 
 ### Features
-- Custom CSS loader - Load custom css by pasting source in `main_custom.css` file in the same folder as client
+- Custom CSS loader - Load custom css by placing .css files in `styles` folder in client's dir
 - Scripts Loader - Scripts are stored in `scripts` folder in client dir
 
 ### How to Install
@@ -23,7 +23,7 @@ npm install -g --save-dev electron-packager // GLOABL INSTALL, NOT RECCOMENDED
 ```
 git clone https://github.com/CuteBladeYT/Krunker-UCI-Client
 cd Krunker-UCI-Client/client
-npm i && npm install fs
+npm i
 echo "Current working directory is" && echo $PWD && echo "Copy it for later!"
 ```
 #### OPTIONALLY
