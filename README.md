@@ -42,6 +42,5 @@ cd build/ <press TAB> && ./Krunker\ UCI <press TAB>
 
 #### OPTIONALLY BEFORE BUILDING
 you can open `main.js` file with any text editor and change `icon.png` to `icon.ico` (Windows) or `icon.icns` (MacOS)
-then if you copied the dir do
 
 done!
