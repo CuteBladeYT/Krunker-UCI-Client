@@ -27,9 +27,6 @@ cd Krunker-UCI-Client/client
 npm i
 echo "Current working directory is" && echo $PWD && echo "Copy it for later!"
 ```
-#### OPTIONALLY
-you can open `main.js` file with any text editor and change `icon.png` to `icon.ico` (Windows) or `icon.icns` (MacOS)
-then if you copied the dir do
 ```
 npx electron-packager "< paste it here between quotes >" "Krunker UCI" --platform=<linux / win32 / darwin> --arch=x64 --prune=true --out=build
 ```
@@ -42,4 +39,9 @@ then
 ```
 cd build/ <press TAB> && ./Krunker\ UCI <press TAB>
 ```
+
+#### OPTIONALLY BEFORE BUILDING
+you can open `main.js` file with any text editor and change `icon.png` to `icon.ico` (Windows) or `icon.icns` (MacOS)
+then if you copied the dir do
+
 done!
