@@ -76,9 +76,9 @@ window.addEventListener("DOMContentLoaded", () => {
 					scriptTestPass = false;
 				};
 			};
-
-			return scriptTestPass;
 		};
+		
+		return scriptTestPass;
 	}
 
 	let lobbySwitchKey = "F4";
