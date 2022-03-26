@@ -1,46 +1,48 @@
 # Krunker UCI Client
 ## Just a Krunker Client
 
+<br>
+
 ### Features
 - Custom CSS loader - Load custom css by placing .css files in `styles` folder in client's dir
 - Scripts Loader - Scripts are stored in `scripts` folder in client dir
-
-### How to Install
-**NOTE:** <> is like comment, delete it while pasting into terminal/cmd
-**Make sure you have installed**
-- [Node](https://nodejs.org/en/download/) v10.19.0
-- [npm](https://www.npmjs.com/) v6.14.4
-- [Git](https://git-scm.com/downloads) 2.25.1
+- Small Anti Cheat - Prevent yourself from helping yourself with cheats
 
 <br>
 
-How to Install **Electron Packager**
-```
-npm install --save-dev electron-packager // LOCAL INSTALL
-npm install -g --save-dev electron-packager // GLOABL INSTALL, NOT RECCOMENDED
-```
+### Dependencies
+- `>=` more or equal to
+- `==` equal
+- `||` Programmatically OR
 
-1. Open Terminal and run this
+<br>
+
+- [Node.JS](https://nodejs.org/en/download/) >= `v10.19.0`
+- npm >= `6.14.4`
+- [Git](https://git-scm.com/downloads) >= `2.25.1`
+- [Python](https://www.python.org/downloads/) == `3.8.10`
+
+<br>
+
+### How to Install
+**NOTES:**
+- `win32` == Windows || `linux` == Linux || `darwin` == MacOS
+- `Console`: Windows `CMD` || Linux/MacOS `Terminal`/`Console`
+
+#### To install
+1. Open Console
+2. Run
 ```
-git clone https://github.com/CuteBladeYT/Krunker-UCI-Client
+git clone "https://github.com/CuteBladeYT/Krunker-UCI-Client"
+```
+```
 cd Krunker-UCI-Client/client
-npm i
-echo "Current working directory is" && echo $PWD && echo "Copy it for later!"
 ```
+3.
 ```
-npx electron-packager "< paste it here between quotes >" "Krunker UCI" --platform=<linux / win32 / darwin> --arch=x64 --prune=true --out=build
+python install.py
 ```
-in `--platform==` instead of `<linux / win32 / darwin>` use your OS:
-- win32 - Windows
-- linux - Linux
-- darwin - MacOS
-
-then
+OR if above doesn't work
 ```
-cd build/ <press TAB> && ./Krunker\ UCI <press TAB>
+python3 install.py
 ```
-
-#### OPTIONALLY BEFORE BUILDING
-you can open `main.js` file with any text editor and change `icon.png` to `icon.ico` (Windows) or `icon.icns` (MacOS)
-
-done!
