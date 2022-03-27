@@ -1,0 +1,38 @@
+/*
+ * name:    Canvas Resizer
+ * author:  UnitedCatdom
+ * version: 1.0.0
+ * desc:    Resizes canvas size, useful for better fps or better concentration
+*/
+
+:root {
+    --vsize: 70vh;
+    --hsize: 70vw;
+}
+
+body > canvas:nth-child(30),
+body > canvas:nth-child(31),
+body > canvas:nth-child(32),
+body > canvas:nth-child(33),
+body > canvas:nth-child(34),
+body > canvas:nth-child(35),
+body > canvas:nth-child(36),
+body > canvas:nth-child(37),
+body > canvas:nth-child(38),
+body > canvas:nth-child(39),
+body > canvas:nth-child(40),
+body > canvas:nth-child(41),
+body > canvas:nth-child(42),
+body > canvas:nth-child(43),
+body > canvas:nth-child(44),
+body > canvas:nth-child(45),
+body > canvas:nth-child(46),
+body > canvas:nth-child(47),
+body > canvas:nth-child(48),
+body > canvas:nth-child(49) {
+    position: fixed!important;
+    top: calc(100vh / 2 - (var(--vsize) / 2))!important;
+    left: calc(100vw / 2 - (var(--hsize) / 2))!important;
+    width: var(--hsize)!important;
+    height: var(--vsize)!important;
+}

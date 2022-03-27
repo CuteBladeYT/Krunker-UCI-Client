@@ -1,0 +1,60 @@
+/*
+Yuki Aim CSS
+CSS by tae
+
+IGN: びこ
+Site: https://whuuayu.github.io/krunker
+
+--Install Instructions--
+    Right Click This Page and Click "Save Page As..."
+
+--Changelog and License Info--
+    https://github.com/whuuayu/yuki-aim-css
+
+If you want to push an update or your name on the CSS, please consider donating <3
+*/
+
+/*The URL below is used for automatically updating the CSS, DO NOT TOUCH IT*/
+
+@import url(https://whuuayu.github.io/yuki-aim-css/yuki_aim.css);
+
+/*Customization Settings/設定*/
+
+:root {
+    --accent: red;
+    /*Default Accent: #e15959 | rgb(225, 89, 89) ↽ RGB Values for Settings */
+
+    --bg-color: #353535;
+    /*Light Mode: #fff | Dark Mode: #353535 or #000*/
+
+    --text-color: #fff;
+    /*Light Mode: #353535 | Dark Mode: #fff*/
+
+    --hp-ammo: #fff;
+    /*HP/Ammo Text Color*/
+
+    --hud-mascot-opacity: 0;
+    /*0 = Invisible | 1 = Visible*/
+
+    --weapon-icon-brightness: 2;
+    /*0 = Black | 2 = White*/
+
+    --menu-decal: 0;
+    /*0 = Invisible | 1 = Visible*/
+}
+
+/*English Font*/
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2);
+}
+
+/*日本語フォント*/
+
+@font-face {
+    font-family: JP;
+    src: url(https://dl.dropboxusercontent.com/s/9b7aer2osbcd388/logotypejp_mp_b_1.1.ttf?dl=0);
+}
+
+/*Make Edits Below*/
