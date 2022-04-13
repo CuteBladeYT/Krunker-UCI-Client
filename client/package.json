@@ -1,6 +1,6 @@
 {
   "name": "KrunkerUCI",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "UCI Client for Krunker.io",
   "main": "main.js",
   "scripts": {

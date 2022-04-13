@@ -54,15 +54,25 @@ app.on("window-all-closed", function () {
 
 let app_vsync = false;
 
+let cfgChecked = false;
+
 fs.readFile("config.json", "utf-8", (err, data) => {
   if (err) { console.warn("Couldn't find config.json file. Using default config"); return };
+
+  cfgChecked = true;
 
   data = JSON.parse(data);
 
   app_vsync = data.vsync;
 });
 
-if (app_vsync == false) {
-  app.commandLine.appendSwitch("disable-frame-rate-limit");
-  app.commandLine.appendSwitch("disable-gpu-vsync");
-};
+let checkCFG = setInterval(() => {
+  if (cfgChecked == true) {
+    if (app_vsync == false) {
+      app.commandLine.appendSwitch("disable-frame-rate-limit");
+      app.commandLine.appendSwitch("disable-gpu-vsync");
+    };
+
+    clearInterval(checkCFG);
+  };
+}, 1000);

@@ -36,7 +36,7 @@ def main():
     else:
         currArch = "x64"
     
-    print("\nBuilding Krunker UCI for platform: %s %s" % (currPlatform, currArch))
+    print(f"\nBuilding Krunker UCI for platform: {currPlatform} {currArch}")
     input("Press enter to continue...")
 
     if currPlatform == "win32": os.system("cls")
@@ -60,9 +60,9 @@ def main():
         print("$ npm i")
         os.system("npm i")
     
-    buildCmd = "npx electron-packager '%s' 'Krunker UCI' --arch=%s --platform=%s --prune=true --out=build" % (cwd, currArch, currPlatform)
+    buildCmd = f"npx electron-packager '{cwd}' 'Krunker UCI' --arch={currArch} --platform={currPlatform} --prune=true --overwrite=true --out=build"
 
-    print("$ %s" % (buildCmd))
+    print(f"$ {buildCmd}")
     os.system(buildCmd)
 
 main()
