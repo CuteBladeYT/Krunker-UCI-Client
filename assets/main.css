@@ -1,0 +1,132 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat.ttf);
+}
+@font-face {
+    font-family: orbitron;
+    src: url(../fonts/orbitron.ttf);
+}
+
+body {
+    background: rgb(27, 27, 27);
+    overflow: hidden auto;
+    user-select: none;
+    width: 100vw;
+}
+
+a {
+    color: var(--hrefs);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --scrollbar-track: rgb(40, 40, 40);
+    --scrollbar-thumb: rgb(27, 27, 27);
+
+    --primary: rgb(27, 27, 27);
+    --primary2: rgb(40, 40, 40);
+    --primary3: rgb(60, 60, 60);
+    --primary4: rgb(15, 15, 15);
+
+    --hrefs: lime;
+
+    --header-height: 200px;
+}
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border: 3px var(--scrollbar-track) solid;
+}
+::-webkit-scrollbar-corner {
+    background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-button {
+    background: var(--scrollbar-thumb);
+    border: 3px var(--scrollbar-track) solid;
+}
+
+
+/* MAIN SITE */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--header-height);
+    background: var(--primary4);
+}
+header > button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% / 0.7);
+    background: none;
+    border: none;
+    color: white;
+    font-family: montserrat;
+    font-size: 64px;
+    margin: 0;
+}
+header > img {
+    position: absolute;
+    top: calc(100% / 2 - (96px / 1.2));
+    left: calc(100% / 2 - (96px / 2));
+    width: 96px;
+    border-radius: 10px;
+}
+
+div#body {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+}
+
+
+.youtube-embed {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-top: 2px white solid;
+    margin-top: 50px;
+    color: white;
+    font-family: orbitron;
+    font-size: 20px;
+}
+section:first-child {
+    border-top: none;
+    margin-top: 0;
+}
+section > h1 {
+    font-size: 42px;
+}
+section > h2 {
+    font-size: 32px;
+}
+section > ul > li {
+    font-family: montserrat;
+    font-size: 26px;
+}
