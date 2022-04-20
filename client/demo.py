@@ -8,12 +8,12 @@ def main():
     files = os.listdir(cwd)
 
     filesVerify = [
-        ["package.json", False],
-        ["main.js", False],
-        ["preload.js", False],
-        ["config.json", False],
-        ["anticheat.json", False],
-        ["node_modules", False]
+        ["package.json", False],    # 0
+        ["main.js", False],         # 1
+        ["preload.js", False],      # 2
+        ["config.json", False],     # 3
+        ["anticheat.json", False],  # 4
+        ["node_modules", False]     # 5
     ]
 
     for f in files:
@@ -23,8 +23,13 @@ def main():
     
     for f in filesVerify:
         if f[1] == False:
-            print(f"'{f[0]}' not found. Aborted.")
-            sys.exit()
+            if f[0] == filesVerify[5][0]:
+                print("Important modules not found. Installing...")
+                os.system("npm i")
+                break
+            else:
+                print(f"'{f[0]}' not found. Aborted.")
+                sys.exit()
     
     os.system("npm start")
 
