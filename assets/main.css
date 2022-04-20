@@ -128,5 +128,23 @@ section > h2 {
 }
 section > ul > li {
     font-family: montserrat;
-    font-size: 26px;
+    font-size: inherit;
+}
+
+@media screen and (max-width: 1280px) {
+    .youtube-embed {
+        width: calc(100% / 1.1);
+    }
+    section {
+        font-size: 50px;
+    }
+    section > h1 {
+        font-size: 62px;
+    }
+    section > h2 {
+        font-size: 52px;
+    }
+    section:nth-child(3) > pre {
+        font-size: 10px;
+    }
 }
