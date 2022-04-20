@@ -121,8 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
 					largeImageText: game.user,
 					smallImageKey: `${game.class.index}`,
 					smallImageText: game.class.name,
-					joinSecret: game.id,
-					partyId: game.id
+					joinSecret: game.id
 				};
 				ipcRenderer.invoke("rpc-handler", rpc);
 			}, 1000);
