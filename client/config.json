@@ -1,0 +1,7 @@
+{
+    "vsync": false,
+    "lobbyswitch_key": "F4",
+    "discord_rpc": true,
+    "screenshot_key": "F3",
+    "screenshot_path": "screenshots"
+}

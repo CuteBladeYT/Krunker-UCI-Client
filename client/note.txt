@@ -1,0 +1,2 @@
+When building the client you can change the version to your own.
+Default is "^10.4.7". You can set it in "package.json" file.
