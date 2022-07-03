@@ -1,6 +1,14 @@
 # Krunker UCI Client
 ## Just a Krunker Client
 
+### NOTE
+I archived this repository because I don't want to continue working on this client until Yendis will fix Krunker.<br>
+It's literally unplayable for like a couple of months.<br>
+Or ping is too high (even with decent connection) or cheaters.<br>
+
+I will continue working on the client when Krunker get fixed.<br>
+Sorry.
+
 <br>
 
 ### Features
